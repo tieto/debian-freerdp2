@@ -79,8 +79,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: same
 Suggests: freerdp2-x11
-Conflicts: freerdp-sipe
-Replaces: freerdp-sipe
+Conflicts: freerdp-sipe, libfreerdp1 (>= 1.2.0~git)
+Replaces: freerdp-sipe, libfreerdp1 (>= 1.2.0~git)
 Description: Free Remote Desktop Protocol library (core library)
  FreeRDP is a libre client/server implementation of the Remote
  Desktop Protocol (RDP).
@@ -92,6 +92,8 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Conflicts: libfreerdp1 (>= 1.2.0~git)
+Replaces: libfreerdp1 (>= 1.2.0~git)
 Multi-Arch: same
 Description: Free Remote Desktop Protocol library (client library)
  FreeRDP is a libre client/server implementation of the Remote
@@ -118,6 +120,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: same
 Suggests: freerdp2-x11
+Conflicts: libfreerdp1 (>= 1.2.0~git)
+Replaces: libfreerdp1 (>= 1.2.0~git)
 Description: Windows Portable Runtime library
  WinPR is a spin-off project of FreeRDP which aims at providing a portable
  implementation of important portions of the Windows API. Just like FreeRDP,
